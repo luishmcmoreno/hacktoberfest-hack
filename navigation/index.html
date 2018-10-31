@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hacktoberfest Hack - Webcomponents</title>
+</head>
+<body>
+
+  <top-nav>
+  </top-nav>
+
+  <template id="top-nav-template">
+    <style>
+
+      a:link {
+        text-decoration: none;
+      }  
+      .nav-list {
+        display: inline;
+        float: left;
+        list-style: none;
+      }
+
+    .nav-list--item {
+        margin-right: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-flex;
+    }
+        </style>
+    <ul class="nav-list">
+        <li class="nav-list--item"><a href="https://www.google.com/">Home</a></li>
+        <li class="nav-list--item"><a href="https://www.espn.com/">About Us</a></li>
+        <li class="nav-list--item"><a href="https://www.reddit.com/">Contact</a></li>
+    </ul>
+    
+  </template>
+
+  <script src="top-nav.js"></script>
+</body>
+</html>
