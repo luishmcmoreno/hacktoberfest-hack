@@ -8,6 +8,13 @@
 </head>
 <body>
   
+  <style>
+    :root {
+      --primary: #f00;
+      --primary-active: #a00;
+    }
+  </style>
+
   <hackthober-button>
     Click me!
   </hackthober-button>
@@ -15,13 +22,13 @@
   <template id="hackthober-button-template">
     <style>
       button {
-        background: #f00;
+        background: var(--primary);
         height: 30px;
         color: #fff;
         border: none;
       }
       button:active {
-        background: #a00;
+        background: var(--primary-active);
       }
     </style>
     <button>
@@ -41,11 +48,6 @@
         const t = document.getElementById('hackthober-button-template');
         const instance = t.content.cloneNode(true);
         shadowRoot.appendChild(instance);
-        this.render();
-      }
-
-      render() {
-
       }
 
     }
