@@ -13,6 +13,14 @@
   </hackthober-button>
 
   <template id="hackthober-button-template">
+    <style>
+      button {
+        background: #f00;
+        height: 30px;
+        color: #fff;
+        border: none;
+      }
+    </style>
     <button>
       <slot></slot>
     </button>
@@ -30,6 +38,11 @@
         const t = document.getElementById('hackthober-button-template');
         const instance = t.content.cloneNode(true);
         shadowRoot.appendChild(instance);
+        this.render();
+      }
+
+      render() {
+
       }
 
     }
