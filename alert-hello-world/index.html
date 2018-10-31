@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hacktoberfest Hack - Webcomponents</title>
+</head>
+<body>
+  
+  <style>
+    :root {
+      --primary: #f00;
+      --primary-active: #a00;
+    }
+  </style>
+
+  <alert-hello-world>
+    Hello world!
+  </alert-hello-world>
+
+  <template id="alert-hello-world-template">
+    <style>
+      .alert {
+        background: var(--primary);
+        height: 30px;
+        padding: 10px;
+        color: #fff;
+        border: none;
+        text-align: center;
+      }
+    </style>
+    <div class="alert">
+      <slot></slot>
+    </div>
+  </template>
+
+  <script src="alert-hello-world.js"></script>
+</body>
+</html>
