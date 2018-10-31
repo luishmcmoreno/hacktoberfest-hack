@@ -1,4 +1,4 @@
-class HackthoberButton extends HTMLElement {
+class AlertHelloWorld extends HTMLElement {
 
   constructor() {
     super();
