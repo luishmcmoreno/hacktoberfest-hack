@@ -13,4 +13,4 @@ class AlertHelloWorld extends HTMLElement {
 
 }
 
-customElements.define('alert-hello-world', HacktoberButton);
+customElements.define('alert-hello-world', AlertHelloWorld);
