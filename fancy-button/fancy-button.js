@@ -1,4 +1,4 @@
-class HackthoberButton extends HTMLElement {
+class HacktoberButton extends HTMLElement {
 
   constructor() {
     super();
@@ -13,4 +13,4 @@ class HackthoberButton extends HTMLElement {
 
 }
 
-customElements.define('hackthober-button', HackthoberButton);
+customElements.define('hacktober-button', HackthoberButton);
